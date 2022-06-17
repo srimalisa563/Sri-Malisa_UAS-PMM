@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style uas.css">
+    <title>Cimal Math Class </title>
+    
+
+    
+    <!--<title>Welcome to Math Class</title>--> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+            
+            
+            <i class='bx bx-chevron-right-alt icon toggle '><img src="chevron-right-solid-24.png " alt=""></i>
+                <span class="image">
+                    <img src="profil.jpg " alt="">
+            
+                    <!--<img src="chevron-left-regular-24.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+
+                    <span class="name">Cimal</span>
+                    <span class="profession">Math Class</span>
+                </div>
+            </div>
+            
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <img src="search-regular-24.png " alt="">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                         <a href="Dashboard.html">
+                        <img src="home-solid-24.png " alt="">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="Materi.html">
+                        <img src="notepad-solid-24.png " alt="">
+                            <i class='bx bxs-notepad-alt icon'></i>
+                            <span class="text nav-text">Materi</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="Video.html">
+                        <img src="video-solid-24.png " alt="">
+                            <i class='bx bxs-video-alt icon'></i>
+                            <span class="text nav-text">Video</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="Buku.html">
+                        <img src="book-solid-24.png " alt="">
+                            <i class='bx bxs-book-alt icon' ></i>
+                            <span class="text nav-text">Buku</span>
+                        </a>
+                    </li>
+
+                        
+
+                    <li class="nav-link">
+                        <a href="Kontak.html">
+                        <img src="contact-solid-24.png " alt="">
+                            <i class='bx bxs-contact-alt icon'></i>
+                            <span class="text nav-text">Kontak</span>
+                        </a>
+                    </li>
+                    
+
+                    
+
+                </ul>
+            </div>
+            
+               <li class="nav-link">
+                        <a href="Login.html">
+                    <img src="log-in-regular-24.png " alt="">
+                        <i class='bx bx-log-in icon' ></i>
+                        <span class="text nav-text">Login</span>
+                    </a>
+                </li>
+
+            
+                <li class="nav-link">
+                        <a href="Logout.html">
+                    <img src="log-out-regular-24.png " alt="">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Ganti mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">Masuk Ke akun anda</div>
+         <ul> 
+           <p> <div class="Username-button-box">
+                    
+                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Password"></ul></div></p>
+                
+        
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+</body>
+</html>
